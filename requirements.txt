@@ -1,0 +1,45 @@
+# Brain Tumor Detection & Segmentation
+# --- Deep learning core ---
+torch>=2.2
+torchvision>=0.17
+timm>=0.9                          # EfficientNet / pretrained backbones
+segmentation-models-pytorch>=0.3   # U-Net, Attention U-Net, ResUNet encoders
+torchmetrics>=1.3                  # Dice, IoU, F1, AUROC
+
+# --- Explainability ---
+grad-cam>=1.5                      # pytorch-grad-cam for Grad-CAM heatmaps
+
+# --- Data handling & augmentation ---
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3                  # splits, classification report, confusion matrix
+albumentations>=1.4                # image + mask augmentations
+opencv-python>=4.8
+Pillow>=10.0
+h5py>=3.8                          # Figshare dataset ships as .mat (v7.3 / HDF5)
+
+# --- Visualization & progress ---
+matplotlib>=3.7
+seaborn>=0.13
+tqdm>=4.66
+
+# --- Notebook environment ---
+jupyterlab>=4.0
+ipykernel>=6.25
+ipywidgets>=8.1
+
+# --- Dataset download ---
+kaggle>=1.6
+
+# --- Stretch goal (3D / BraTS) - uncomment when needed ---
+# nibabel>=5.1
+# monai>=1.3
+
+# --- Modular phase (web app, PDF, deployment) - uncomment later ---
+# fastapi>=0.110
+# uvicorn[standard]>=0.27
+# python-multipart>=0.0.9
+# reportlab>=4.0
+# onnx>=1.15
+# onnxruntime>=1.17
